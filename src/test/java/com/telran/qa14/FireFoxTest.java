@@ -18,6 +18,7 @@ public class FireFoxTest {
     //before - setUp(){}
     @BeforeMethod
     public void setUp(){
+        System.setProperty("webdriver.gecko.driver", "C:/Tools/geckodriver.exe");
         driver = new FirefoxDriver();
         driver.get("http://automationpractice.com/index.php");
         driver.manage().window().maximize();
